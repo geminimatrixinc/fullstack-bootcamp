@@ -1,12 +1,16 @@
 function calculator(action, num1, num2) {
     switch (action) {
         case 'add':
+        case '+':
             return add(num1, num2);
         case 'subtract':
+        case '-':
             return subtract(num1, num2);
         case 'multiply':
+        case '*':
             return multiply(num1, num2);
         case 'divide':
+        case '/':
             return divide(num1, num2);
         default:
             throw new Error('Invalid action');
