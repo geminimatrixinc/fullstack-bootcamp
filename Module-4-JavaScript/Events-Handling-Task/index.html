@@ -10,6 +10,30 @@
             // a. get the values for num1 and num2, and also the operator  (tip: use the event obj)
             // b. call the calculator method..from calulator.js
             // c. output the result to console or to the result element
+           
+            var handleClick = () => {
+    
+                var num1 = document.querySelector('#num1').value;
+                var operator = document.querySelector('#operator').value;
+                var num2 = document.querySelector('#num2').value;
+                var answerElement = document.querySelector('#result');
+                debugger
+
+                var result = calculator(operator, num1, num2);
+                console.log(`the result is ${result}`)
+
+                // set the dom element with result
+                answerElement.innerHTML = result;
+        }
+
+             window.addEventListener('DOMContentLoaded', (event) => {
+                console.log('The DOM is fully loaded.');
+
+                  var button = document.querySelector('button');
+                  button.addEventListener('click', handleClick);
+
+                
+             });
     </script>
 </head>
 <body>
@@ -18,7 +42,13 @@
     <input type="text" id="operator" placeholder="Enter operator (+, -, *, /)">
     <input type="text" id="num2" placeholder="Enter second number">
     <button>Calculate</button>
-    <p id="result"></p>
+    <textarea id="result"></textarea>
     <script src="calculator.js"></script>
+    <script>
+
+     
+
+ 
+    </script>
 </body>
 </html>
