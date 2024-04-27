@@ -10,12 +10,8 @@ let shoppingCart = {
         this.items.splice(index, 1);
     },
     calculateTotal: function () {
-        debugger;
-
-        console.debug('calculateTotal')
         let total = 0;
         for (let i = 0; i < this.items.length; i++) {
-            console.debug(i)
             total += this.items[i].price;
         }
         return total;
