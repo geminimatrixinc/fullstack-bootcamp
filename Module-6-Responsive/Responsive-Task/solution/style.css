@@ -28,11 +28,22 @@ p {
     }
 }
 
-/* TODO: Task - add some responsive image size, and padding left/right, 
-optional. font. using media queries
-
 /* Tablet Styles */
-
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    img {
+        width: 80%;
+    }
+}
 
 /* Mobile Styles */
-
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+    img {
+        width: 100%;
+    }
+}
