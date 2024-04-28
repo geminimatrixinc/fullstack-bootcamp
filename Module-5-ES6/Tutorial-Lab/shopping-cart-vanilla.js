@@ -29,6 +29,7 @@ let shoppingCart = {
     getCurrentItems: function () {
         return this.items.map(item => item.name);
     },
+
     getItemByName: function (name) {
         for(var i = 0; i < this.items.length; i++) {
             var currentItem = this.items[i];
@@ -40,7 +41,6 @@ let shoppingCart = {
 };
 
 
-shoppingCart.items.pop
 
 // helper to create items object
 function Item(name, price, discount = 0) {
@@ -59,8 +59,6 @@ shoppingCart.addItem(item2);
 shoppingCart.addItem({ name: 'temp', price: 40 })
 
 
-
-
 console.log(shoppingCart.getCurrentItems()); // Output: ['Shirt', 'Pants']
 
 shoppingCart.removeItem(0);
@@ -71,3 +69,4 @@ console.log(shoppingCart.calculateTotal()); // Output: 30
 console.log(shoppingCart.applyDiscountCode('SAVE10')); // Output: 27
 
 console.log(shoppingCart.getItemByName('Pants')) // Output: { name: 'Pants', price: 30, discount: 0}
+
