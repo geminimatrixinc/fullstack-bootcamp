@@ -1,4 +1,4 @@
-let shoppingCart = {
+var shoppingCart = {
     items: [],
 
     addItem: function (item) {
