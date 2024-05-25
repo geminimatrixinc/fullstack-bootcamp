@@ -20,12 +20,14 @@ btnReset.addEventListener('click', onResetClick);
 function onStartClick() {
     console.log('Start button clicked at:', new Date());
     txtStartTime.value = new Date().toLocaleTimeString();
+    // add html element log...
     addTimerLog('Start button clicked at ' + new Date().toLocaleTimeString());
 }
 
 function onStopClick() {
     console.log('Stop button clicked at:', new Date());
     txtEndTime.value = new Date().toLocaleTimeString();
+    // remove html element log
     addTimerLog('Stop button clicked at ' + new Date().toLocaleTimeString());
 }
 
@@ -33,6 +35,7 @@ function onResetClick() {
     console.log('Reset button clicked');
     txtStartTime.value = '';
     txtEndTime.value = '';
+    // remove all html element..
     removeAllTimerLogs();
 }
 
