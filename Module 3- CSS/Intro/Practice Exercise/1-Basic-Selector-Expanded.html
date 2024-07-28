@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Selectors Exercise</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="styles.css">
+<style>
+    li {
+        font-size: x-large;
+    }
+</style>
+<style>
+    @font-face{font-family:Comic-Sans;src:url(fonts/comic-sans-bold.ttf)}
+    @font-face{font-family:Comic-Sans-Bold;src:url(fonts/comic-sans-bold.ttf)}
+    body::-webkit-scrollbar{width:15px}
+    body::-webkit-scrollbar-track{background-color:#ffe0df}
+    body::-webkit-scrollbar-thumb{background-color:#c14944;border:2px solid #ffe0df;border-radius:100px}
+    
+    body,html{background-color:#fffce6;overflow-x:hidden}*,
+    body,html{
+        box-sizing:border-box;
+        font-family:Comic-Sans;
+        font-weight:400;
+        margin:0;padding:0}.btn,h1,h2,h3,h4,h5,h6,span{font-family:Comic-Sans;font-weight:700}.page-width{margin:0 auto;max-width:1240px;padding:0 20px}.page-width-small{margin:0 auto;max-width:1000px;padding:0 20px}</style>
+</head>
+<body>
+<!-- 
+Requirements:
+
+Apply the following styles using CSS selectors:
+
+1. Style the paragraphs to have a font size of 16px and a line height of 1.5.
+2. Style the first heading (h1) to have a text color of red.
+3. Style the second heading (h2) to have a background color of light gray.
+4. Style the list items to have a font weight of bold. 
+
+-->
+
+    <h1>Welcome to My Website</h1>
+    <p>This is a paragraph with some text.</p>
+    <h2>About Us</h2>
+    <ul>
+        <li id="firstItem">
+            <i class="fa-solid fa-paper-plane"></i> 
+            Item 1
+        </li>
+        <li>
+            <i class="fa-regular fa-face-smile"></i>
+            Item 2
+        </li>
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="height: 25px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+            <span>Item 3</span>
+        </li>
+       
+    </ul>
+</body>
+</html>

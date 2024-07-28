@@ -1,0 +1,26 @@
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    background-color: lightgray;
+}
+
+li {
+    font-weight: bold;
+    font-size: larger;
+}
+
+li span {
+    color: red;
+}
+
+/* #firstItem {
+    background-color: blue;
+} */
