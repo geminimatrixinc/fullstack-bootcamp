@@ -1,0 +1,11 @@
+body {
+    background-color: aqua;
+}
+
+.block {
+    color: darkblue;
+    font-size: x-large;
+    border: 10px solid red;
+    padding: 10px;
+    margin: 40px;
+}
