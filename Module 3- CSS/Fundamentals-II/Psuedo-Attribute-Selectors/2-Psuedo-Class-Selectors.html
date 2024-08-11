@@ -11,7 +11,7 @@
         }
 
         li:nth-child(even) {
-            background-color: #e0e0e0;
+            background-color: #dc8585;
         }
 
         li:hover {
@@ -19,10 +19,15 @@
             background-color: black;
         }
 
+        li:active {
+            background-color:  orange;
+        }
+
         /* Pseudo-elements */
         p::before {
             content: "Note: ";
-            color: red;
+            color: white;
+            background-color: red;
             font-weight: bold;
         }
 
@@ -32,7 +37,7 @@
             font-weight: bold;
         }
 
-        span::selection {
+         span::selection {
             background: yellow;
             color: black;
         }
@@ -45,6 +50,7 @@
         <li>List Item 2</li>
         <li>List Item 3</li>
     </ul>
-    <p>This is a paragraph. <span>Highlighted text.</span></p>
+    <p class="highlighted-paragraph">This is a paragraph. <span>Highlighted text.</span></p>
+    <span>This should not highlight</span>
 </body>
 </html>
