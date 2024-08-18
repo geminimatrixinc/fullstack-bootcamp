@@ -11,3 +11,5 @@ console.log("This square root of PI is " + Math.sqrt(pi));
 console.log("PI to the power of 2 is " + Math.pow(pi, 2));
 
 console.log("This is a random number: " + Math.random());
+
+Math.random

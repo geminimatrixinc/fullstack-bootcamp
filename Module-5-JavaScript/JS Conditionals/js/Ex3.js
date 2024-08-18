@@ -2,6 +2,8 @@ var frameWork = "react";
 
 console.log("The framework is" + " " + frameWork);
 
+
+
 switch (frameWork) {
   case "angular":
     console.log("typescript");

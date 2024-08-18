@@ -9,3 +9,4 @@ if (parseInt(num1, 10) > parseInt(num2, 10)) {
 } else {
   console.log("The values " + num1 + " and " + num2 + " are equal.");
 }
+
