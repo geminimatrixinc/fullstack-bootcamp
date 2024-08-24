@@ -6,8 +6,6 @@ function addNumbers(firstNumber, secondNumber) {
         //console.error("Error: Params are not a number")
         return 0;
     }
-
-
     
     return firstNumber + secondNumber;
 }

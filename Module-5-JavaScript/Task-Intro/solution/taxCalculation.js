@@ -20,6 +20,7 @@ function calculateTotal(items = 5, price = 100, discount = 0) {
     }
     else {
         // alert This is a valid number...
+        alert('You are on your way!')
     }
 
     console.log(`items ` + items)
@@ -32,3 +33,6 @@ function calculateTotal(items = 5, price = 100, discount = 0) {
     return total;
 
 };
+
+
+calculateTotal()
