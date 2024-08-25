@@ -5,7 +5,10 @@ var sayHello = function () {
     console.log('Hello');
   }
   
-  const sayHello2 = (name) => console.log(`Hello ${name}`);
+  // shorthand way to write function!!
+  const sayHello2 = (name) => {
+    console.log(`Hello ${name}`);
+  };
   
   const greet = (name, message) => console.log(`Hello ${name}, ${message}`);
 

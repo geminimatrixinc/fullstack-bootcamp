@@ -10,5 +10,12 @@ console.log(sum(7));        // 12
 console.log(sum());          // 8
 
 
+// quick way prevent NAN, protecting against undefined var...
+function addNumber(x=0, y=0) {
+    return x + y;
+}
+
+console.log(addNumber())
+
 
 

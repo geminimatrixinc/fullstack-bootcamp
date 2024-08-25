@@ -62,3 +62,4 @@ var zipCode = profile.address.zipCode;
 
 
 console.log(`fullname ${fullName}`)
+

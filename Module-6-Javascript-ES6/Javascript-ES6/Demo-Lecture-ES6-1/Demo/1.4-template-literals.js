@@ -1,5 +1,6 @@
 
-// using the + operator
+
+// using the + operator\
 const message1 = 'This is a long message\n' + 
 'that spans across multiple lines\n' + 
 'in the code.'
@@ -35,5 +36,15 @@ console.log(result);
 // elvis operator ?
 console.log(`${result < 10 ? 'Too low' : 'Very high'}`)
 
+
+
+
+
+
+var total = 50
+// vanilla js
+console.log("The total:" + total + "The tax is:" + 0.13 + "%")
+// es6 + template literal
+console.log(`The total:   ${total} The tax is 0.13 %`)
 
 

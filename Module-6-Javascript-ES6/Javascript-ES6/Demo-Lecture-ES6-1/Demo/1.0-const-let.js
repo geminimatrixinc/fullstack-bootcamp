@@ -6,7 +6,7 @@ let test = "testing";
 name = 'Jack';
 console.log(name);
 
-// use const, if you aren't going to re-assign it
+// use const, if you aren't going to re-assign it (JSON - Javascript Object Notation/ Object Literal)
 const person = {
   name: 'John',
   age: 33
@@ -19,6 +19,9 @@ console.log(person);
 
 
 person = { name: 'Jack' } // re-assigning will throw error
+
+
+
 
 
 
