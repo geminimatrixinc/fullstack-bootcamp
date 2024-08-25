@@ -14,4 +14,4 @@ console.log(dailyActivities);  // ['work', 'eat']
 // remove the first element
 dailyActivities.shift();
 
-console.log(dailyActivities); // ['eat', 'sleep']
+console.log(dailyActivities); // ['eat']

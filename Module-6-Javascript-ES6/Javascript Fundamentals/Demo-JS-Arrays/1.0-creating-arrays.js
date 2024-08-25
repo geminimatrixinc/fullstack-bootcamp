@@ -1,7 +1,7 @@
 
 
 // new keyword
-const array2 = new Array("eat", "sleep");
+const array2 = new Array("eat", "sleep"); // ==> ["eat", "sleep"]
 
 // empty array
 const myList = [ ]; //
