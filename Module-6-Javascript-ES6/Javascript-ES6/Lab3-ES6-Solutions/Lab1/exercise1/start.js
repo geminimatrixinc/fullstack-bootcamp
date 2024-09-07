@@ -14,3 +14,9 @@ function gretter(myArray) {
 
 
 gretter([1, 2, 3, 4])
+
+
+// Hello 1
+// Hello 2
+// Hello 3
+// Hello 4
