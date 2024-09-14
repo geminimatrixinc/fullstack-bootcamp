@@ -2,13 +2,19 @@ import { useEffect } from 'react';
 
 function TimerFunc() {
     
-    useEffect(() => {
+    const isToggled = false;
+
+    function handleLoad() {
         console.log('Component mounted');
 
         return () => {
             console.log('Component will unmount');
         };
-    }, []); // Empty dependency array ensures this runs only on mount/unmount
+    }
+    useEffect(handleLoad, []); // Empty dependency array ensures 
+            // this runs only on mount/unmount
+
+
 
     return <p>Timer is running...</p>;
 }

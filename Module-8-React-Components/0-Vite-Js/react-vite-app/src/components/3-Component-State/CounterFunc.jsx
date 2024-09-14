@@ -7,7 +7,7 @@ import { useState } from 'react';
 // 2. setCount updates the state and triggers a re - render.
 
 function CounterFunc() {
-
+    
     const [count, setCount] = useState(0);
 
     return (

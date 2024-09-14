@@ -3,15 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import TimerClass from './components/5-Component-LifeCycle/TImerClass';
-import TimerFunc from './components/5-Component-LifeCycle/TimerFunc';
+import TimerClass from './components/5-Component-LifeCycle/TImerClass'
+import TimerFunc from './components/5-Component-LifeCycle/TimerFunc'
+import CounterClass from './components/3-Component-State/CounterClass'
 
 const App = () => {
     return <>
-        <TimerClass />
-        <TimerFunc />
+        <p>Hello World!</p>
+        <br />
+      <CounterClass />
+      <TimerFunc />
     </>
 }
+
 // function App() {
 //   const [count, setCount] = useState(0)
 

@@ -5,10 +5,15 @@ import React from 'react';
 // 2. this.setState is used to update state, triggering a re - render.
 
 class CounterClass extends React.Component {
-    
+
     constructor(props) {
         super(props);
         this.state = { count: 0 };
+    }
+
+    componentDidUpdate() {
+        debugger;
+        console.log(`component state did update`)
     }
 
     render() {
