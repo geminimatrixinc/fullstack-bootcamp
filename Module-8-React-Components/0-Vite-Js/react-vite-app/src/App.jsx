@@ -9,13 +9,15 @@ import TimerFunc from './components/5-Component-LifeCycle/TimerFunc'
 import ButtonEvent from './components/5-Component-Events/1-Button'
 import ReactEvents from './components/5-Component-Events/2-React-Events'
 import PreventDefaultEvent from './components/5-Component-Events/4-Prevent-Default'
+import ActionLink from './components/5-Component-Events/4-Action-Link'
 
 const App = () => {
     return <>
         <p>Hello World!</p>
         <br />
-        <ButtonEvent />
-        <ReactEvents />
+        <ActionLink />
+        <br />
+        <PreventDefaultEvent />
     </>
 }
 
