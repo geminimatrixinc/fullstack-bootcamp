@@ -5,14 +5,17 @@ import './App.css'
 
 import TimerClass from './components/5-Component-LifeCycle/TImerClass'
 import TimerFunc from './components/5-Component-LifeCycle/TimerFunc'
-import CounterClass from './components/3-Component-State/CounterClass'
+
+import ButtonEvent from './components/5-Component-Events/1-Button'
+import ReactEvents from './components/5-Component-Events/2-React-Events'
+import PreventDefaultEvent from './components/5-Component-Events/4-Prevent-Default'
 
 const App = () => {
     return <>
         <p>Hello World!</p>
         <br />
-      <CounterClass />
-      <TimerFunc />
+        <ButtonEvent />
+        <ReactEvents />
     </>
 }
 

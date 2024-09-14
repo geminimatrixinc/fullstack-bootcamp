@@ -11,14 +11,17 @@ import React from 'react';
 class TimerClass extends React.Component {
 
     componentDidMount() {
+        debugger;
         console.log('Component mounted');
     }
 
     componentWillUnmount() {
+        debugger
         console.log('Component will unmount');
     }
 
     componentDidUpdate() {
+        debugger
         console.log(`Component did update..`)
     }
 

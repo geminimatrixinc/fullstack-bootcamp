@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 function TimerFunc() {
     
     const componentLoaded = () => {
+
+
         console.log('Func Component mounted');
 
         return () => {
@@ -11,6 +13,9 @@ function TimerFunc() {
     }
 
     // component mounted..
+    // ====> componentDidMount()
+    // ====> componentDidUnMount()
+    
     useEffect(componentLoaded, []); // Empty dependency array ensures this runs only on mount/unmount
 
 
