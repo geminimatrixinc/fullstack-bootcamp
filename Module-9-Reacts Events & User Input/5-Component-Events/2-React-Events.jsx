@@ -5,6 +5,7 @@ import React from 'react';
 // whereas DOM Events are the native events provided by the browser.
 
 const ReactEventExample = () => {
+    
     const handleClick = (event) => {
         console.log('React Event:', event);
         console.log('React Event Target:', event.target);

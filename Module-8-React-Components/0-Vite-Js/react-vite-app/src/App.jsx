@@ -3,21 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import TimerClass from './components/5-Component-LifeCycle/TImerClass'
-import TimerFunc from './components/5-Component-LifeCycle/TimerFunc'
-
-import ButtonEvent from './components/5-Component-Events/1-Button'
-import ReactEvents from './components/5-Component-Events/2-React-Events'
-import PreventDefaultEvent from './components/5-Component-Events/4-Prevent-Default'
-import ActionLink from './components/5-Component-Events/4-Action-Link'
+import PreventDefaultEvent from './components/4-Component-Events/4-Prevent-Default'
+import ActionLink from './components/4-Component-Events/4-Action-Link'
+import HandleButtonEvent from './components/4-Component-Events/HandleButtonEvent'
 
 const App = () => {
     return <>
         <p>Hello World!</p>
         <br />
-        <ActionLink />
-        <br />
-        <PreventDefaultEvent />
+        <HandleButtonEvent />
     </>
 }
 

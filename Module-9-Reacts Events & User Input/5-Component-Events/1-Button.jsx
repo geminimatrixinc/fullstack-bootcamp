@@ -4,12 +4,14 @@
 // 3. handleClick is passed as an event handler for the onClick event.
 
 function ButtonEvent() {
-
+    
     function handleClick() {
         alert('Button clicked!');
     }
 
-    return <button onClick={handleClick}>Click Me!</button>;
+
+
+    return <button onClick={handleClick}>Click Me!</button>; 
 }
 
 export default ButtonEvent;
