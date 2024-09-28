@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 // React Hook Form is a popular library for handling forms in React. It simplifies form handling and validation.
 
 const ReactHookFormExample = () => {
+    
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = (data) => {

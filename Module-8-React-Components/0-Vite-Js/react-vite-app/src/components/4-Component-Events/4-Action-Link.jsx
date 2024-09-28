@@ -5,6 +5,7 @@ const ActionLink = () => {
     // synthetic event object is available
     function handleLinkClick (event) {
 
+        console.log(event)
         event.preventDefault();
 
         window.alert(`Hey, Don't Leave!!`)

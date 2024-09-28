@@ -1,17 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState, useEffect, useRef } from 'react'
 import './App.css'
 
-import PreventDefaultEvent from './components/4-Component-Events/4-Prevent-Default'
-import ActionLink from './components/4-Component-Events/4-Action-Link'
-import HandleButtonEvent from './components/4-Component-Events/HandleButtonEvent'
+
+const FetchDataComponent = () => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(response => response.json())
+            .then(data => setData(data))
+            .catch(error => console.error('Error fetching data:', error));
+    }, []);
+
+    return (
+        <div>
+            <h1>Posts</h1>
+            <ul>
+                {
+                data.map(post => (
+                    <li key={post.id}>
+                        <h2>{post.title}</h2>
+                        <p>{post.body}</p>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+};
+
+
+
 
 const App = () => {
+
+
     return <>
         <p>Hello World!</p>
         <br />
-        <HandleButtonEvent />
+        <FetchDataComponent />
     </>
 }
 

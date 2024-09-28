@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 
 // Uncontrolled components rely on the DOM to store form data. They use refs to access the form values.
 

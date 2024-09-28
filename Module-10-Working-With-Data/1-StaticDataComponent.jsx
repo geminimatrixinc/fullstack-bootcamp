@@ -12,9 +12,11 @@ const StaticDataComponent = () => {
         <div>
             <h1>Static Data</h1>
             <ul>
-                {data.map(item => (
-                    <li key={item.id}>{item.name}</li>
-                ))}
+                {
+                    data.map(item => (
+                        <li key={item.id}>{item.name}</li>
+                    ))
+                }
             </ul>
         </div>
     );
