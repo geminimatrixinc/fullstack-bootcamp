@@ -9,10 +9,16 @@ app.get('/', function (req, res) {
 
 app.get('/greet', function(req, res) {
     console.log('greet');
-    res.statusCode(404);
-    res.end();
+    
+    //res.statusCode(404); // 500 error = server exception will be thrown
+    // res.end();
+    
+    res.sendStatus(404)
+  
 })
-var port = process.env.port || 3000;
+
+
+var port = process.env.port || 4000;
 app.listen(port, function() {
     console.log(`running on localhost on port:${port}`); 
 })
